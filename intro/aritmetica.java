@@ -14,7 +14,7 @@ public class aritmetica{
         System.out.print("escriba el primer entero: ");
         x=entrada.nextInt();
 
-        System.out.print("escriba el segundo entero: ")
+        System.out.print("escriba el segundo entero: ");
         y=entrada.nextInt();
 
         suma=x+y;
