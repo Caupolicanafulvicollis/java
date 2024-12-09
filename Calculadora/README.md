@@ -1,6 +1,6 @@
 ## **Calculadora Completa en Java**
 
-![Calculadora](https://via.placeholder.com/800x400.png?text=Vista+de+Calculadora)  
+![Calculadora](https://github.com/Caupolicanafulvicollis/java/blob/main/Calculadora/Calculadora.png)  
 *Imagen ilustrativa de la calculadora en funcionamiento.*
 
 ---
