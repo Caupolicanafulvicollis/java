@@ -6,7 +6,7 @@ public class CalculadoraApp {
     public static void main(String[] args) {
         // Crear la ventana principal
         JFrame ventana = new JFrame("Calculadora Completa");
-        ventana.setSize(400, 500);
+        ventana.setSize(400, 350);
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         ventana.setLayout(null);
 
