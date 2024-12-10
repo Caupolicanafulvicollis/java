@@ -13,7 +13,7 @@ public class MainFrame extends JFrame{
         
         // Crear el menu y las opciones
         JMenuBar menuBar = new JMenuBar();
-        JMenu menu = new JMenu("Opciones");
+        JMenu menu = new JMenu("Menu");
         JMenuItem ErAbs = new JMenuItem("Calculo Error Absoluto");
         JMenuItem ErRel = new JMenuItem("Calculo Error Relativo");
         JMenuItem salItem = new JMenuItem("Salir");
@@ -28,11 +28,12 @@ public class MainFrame extends JFrame{
 
         //Mensaje explicativo
         JTextArea mensajeUsuario = new JTextArea(
-            "Bienvenido al programa Control 1.\n\n"
-            + "Por favor, elige una de las siguientes opciones en el menú:\n"
-            + "1. Factura: Para calcular el monto total de un artículo con impuesto.\n"
-            + "2. Interés: Para calcular el interés ganado por un depósito.\n"
-            + "3. Salir: Para cerrar el programa."
+            "¡Bienvenido al programa de Estimación del Error!\n\n"
+            + "Por favor, selecciona una de las siguientes opciones en el menú:\n"
+            + "1. Cálculo de Error Absoluto: Determina la diferencia absoluta entre dos valores.\n"
+            + "2. Cálculo de Error Relativo: Calcula la proporción del error en relación con un valor de referencia.\n"
+            + "3. Salir: Finaliza el programa."
+
         );
         mensajeUsuario.setBounds(20, 20, 360, 150);
         mensajeUsuario.setEditable(false); // Hacer el área de texto no editable
