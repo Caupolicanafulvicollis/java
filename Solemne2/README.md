@@ -23,12 +23,11 @@ El programa incluye una interfaz gráfica intuitiva, diseñada para facilitar el
 
 - **Cálculo de energía cinética:**  
   - Basado en la fórmula:
-    \[
-    E_c = \frac{1}{2} \cdot m \cdot v^2
-    \]
+    $E_c = \frac{1}{2} \cdot m \cdot v^2$
+
   - Donde:
-    - \( m \): Masa del cuerpo (kg).
-    - \( v \): Velocidad del cuerpo (m/s).
+    - $m$ : Masa del cuerpo (kg).
+    - $v$ : Velocidad del cuerpo (m/s).
 
 - **Validaciones de Entrada:**  
   - Asegura que los datos ingresados sean válidos antes de realizar los cálculos.
@@ -60,7 +59,7 @@ El programa incluye una interfaz gráfica intuitiva, diseñada para facilitar el
 
 1. **Clona el Repositorio:**
    ```bash
-   git clone https://github.com/tu-usuario/solemne2.git
+   git clone https://github.com/Caupolicanafulvicollis/java/tree/main/Solemne2
    cd solemne2
    ```
 
@@ -99,9 +98,7 @@ La ventana principal contiene un menú con tres opciones:
   - Velocidad del cuerpo (m/s).
 - **Resultado:**
   - Energía cinética calculada según la fórmula:
-    \[
-    E_c = \frac{1}{2} \cdot m \cdot v^2
-    \]
+    $E_c = \frac{1}{2} \cdot m \cdot v^2$
 
 ---
 
@@ -117,37 +114,6 @@ El proyecto está dividido en cuatro clases principales:
    Clase encargada de la lógica y la interfaz para calcular la energía cinética.  
 4. **`UtilidadesGUI`:**  
    Clase auxiliar para métodos comunes en la interfaz gráfica.
-
-### **Diagrama de Clases**
-```plaintext
-+--------------------+
-|    Solemne2App     |
-+--------------------+
-| - iniciar()        |
-+--------------------+
-          |
-          V
-+--------------------+
-|   LoteriaFrame     |
-+--------------------+
-| - calcularTicket() |
-+--------------------+
-          |
-          V
-+--------------------+
-|   EnergiaFrame     |
-+--------------------+
-| - calcularEnergia()|
-+--------------------+
-          |
-          V
-+--------------------+
-|   UtilidadesGUI    |
-+--------------------+
-| - configurarBoton()|
-| - crearPanelCon... |
-+--------------------+
-```
 
 ---
 
@@ -186,7 +152,7 @@ Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE)
 ---
 
 ### 🎯 **Autor**
-**[Tu Nombre]**  
+**Caupolicana Fulvicollis**  
 Desarrollador en aprendizaje 🚀 | Explorando el mundo de Java y POO
 
 ¡Gracias por revisar este proyecto! Si tienes preguntas o comentarios, no dudes en contactarme. 😊
