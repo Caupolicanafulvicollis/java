@@ -19,7 +19,7 @@ Este espacio reúne una variedad de programas diseñados para resolver problemas
 ---
 
 ## 📁 **Calculadora Financiera**  
-📍 [Ir a la Carpeta]([https://github.com/Caupolicanafulvicollis/java/tree/main/CalculadoraFinanciera](https://github.com/Caupolicanafulvicollis/java/tree/main/CalculadoraFinanciera))  
+📍 ([Ir a la Carpeta](https://github.com/Caupolicanafulvicollis/java/tree/main/CalculadoraFinanciera))  
 
 Este programa interactivo está diseñado para realizar cálculos financieros básicos a través de una interfaz gráfica. Las funcionalidades incluyen:  
 
