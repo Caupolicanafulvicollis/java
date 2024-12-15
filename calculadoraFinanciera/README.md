@@ -90,15 +90,15 @@ Permite calcular el costo total de un viaje en tren basándose en datos proporci
 3. **Cálculo Final:**
    - Pago sin descuento:
 
-     $$\text{Pago Base} = \text{Distancia} \times 0.75$$
+     - $$\text{Pago Base} = \text{Distancia} \times 0.75$$
 
    - Descuento:
 
-     $$\text{Descuento} = \text{Pago Base} \times 0.30$$
+     - $$\text{Descuento} = \text{Pago Base} \times 0.30$$
 
    - Pago final:
 
-     $$\text{Pago Final} = \text{Pago Base} - \text{Descuento}$$
+     - $$\text{Pago Final} = \text{Pago Base} - \text{Descuento}$$
 
 
 ---
