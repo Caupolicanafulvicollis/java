@@ -1,43 +1,38 @@
-### **README.md para el Proyecto "Calculadora Financiera con Menú Gráfico"**
+# 🚆 **Sistema de Cálculo de Pagos en Tren**
+
+Este proyecto es una aplicación gráfica desarrollada en Java bajo el paradigma de **Programación Orientada a Objetos (POO)**.  
+Permite calcular el costo total de un viaje en tren basándose en datos proporcionados por el usuario como distancia a recorrer y días de estancia. Además, aplica descuentos automáticos si se cumplen ciertas condiciones.
 
 ---
 
-# 💼 **Calculadora Financiera con Menú Gráfico**
+## ✨ **Características del Proyecto**
 
-Este proyecto es una aplicación gráfica en Java que permite realizar dos cálculos financieros clave:  
-1. **Cálculo de impuestos para artículos.**  
-2. **Cálculo de intereses para depósitos.**
+1. **Interfaz Gráfica Interactiva:**  
+   - Campos para ingresar los datos del cliente y detalles del viaje.
+   - Botón para calcular el pago total, considerando descuentos.
+   - Resultados claros y fáciles de interpretar.
 
-El programa utiliza un menú interactivo para seleccionar las opciones disponibles y proporciona resultados claros en ventanas separadas.
+2. **Cálculo de Pago Basado en Condiciones:**  
+   - Se aplica un **30% de descuento** si:
+     - La distancia supera **3000 km**.
+     - Los días de estancia son mayores a **2 días**.
 
----
+3. **Diseño Modular Basado en POO:**  
+   - **Separación de responsabilidades:** Cada funcionalidad clave está encapsulada en una clase.
+   - Facilita la escalabilidad y el mantenimiento del código.
 
-## ✨ **Características**
-
-1. **Menú Principal Intuitivo:**  
-   - Opciones disponibles:
-     - **Factura:** Cálculo del impuesto y total de un artículo.
-     - **Interés:** Cálculo del interés ganado sobre un capital.
-     - **Salir:** Cierra el programa.
-   - Implementado mediante un `JMenuBar`.
-
-2. **Ventanas Interactivas:**  
-   - Cada cálculo tiene una ventana dedicada que guía al usuario con campos de entrada y resultados.
-
-3. **Mensajes de Validación:**  
-   - Si el usuario ingresa datos incorrectos, el programa muestra alertas claras.
-
-4. **Fácil de Usar:**  
-   - Interfaz gráfica simple y funcional para usuarios sin experiencia técnica.
+4. **Mensajes de Validación:**  
+   - Asegura que el usuario ingrese datos válidos antes de realizar cálculos.
 
 ---
 
 ## 🛠️ **Tecnologías Utilizadas**
 
 - **Lenguaje:** Java  
-- **Librerías:**  
-  - `javax.swing` para la creación de la interfaz gráfica.  
-  - `java.awt` para el diseño y posicionamiento de los componentes.
+- **Librerías:**
+  - `javax.swing` para la interfaz gráfica.
+  - `java.awt` para el diseño y la disposición de los componentes.
+  - `java.math` para cálculos precisos.
 
 ---
 
@@ -45,7 +40,7 @@ El programa utiliza un menú interactivo para seleccionar las opciones disponibl
 
 - **Java Development Kit (JDK):** Versión 8 o superior.  
 - **Entorno de Ejecución:**  
-  - Cualquier IDE que soporte Java (Eclipse, IntelliJ, NetBeans) o consola de comandos.
+  - IDE compatible con Java (IntelliJ IDEA, Eclipse, NetBeans, etc.) o consola de comandos.
 
 ---
 
@@ -53,115 +48,108 @@ El programa utiliza un menú interactivo para seleccionar las opciones disponibl
 
 1. **Clona este repositorio:**
    ```bash
-   git clone https://github.com/Caupolicanafulvicollis/java/blob/main/calculadoraFinanciera.git
-   cd calculadoraFinanciera
+   git clone https://github.com/tu-usuario/sistema-tren.git
+   cd sistema-tren
    ```
 
 2. **Compila el programa:**
    ```bash
-   javac CalculadoraFinanciera.java
+   javac trenCalculadora/*.java
    ```
 
 3. **Ejecuta el programa:**
    ```bash
-   java CalculadoraFinanciera
+   java trenCalculadora.TrenApp
    ```
-
-4. **Interactúa con el programa:**
-   - Selecciona una opción en el menú para abrir las ventanas correspondientes.
 
 ---
 
 ## 🖥️ **Vista del Programa**
 
-### **Menú Principal:**
-Cuando ejecutas el programa, se muestra una ventana con un menú desplegable que permite elegir entre las opciones:
-- **Factura:** Calcula impuestos para artículos.
-- **Interés:** Calcula intereses para depósitos.
-- **Salir:** Cierra la aplicación.
+### **Formulario de Entrada**
+- **Datos Requeridos:**
+  - Nombre del cliente.
+  - RUT del cliente.
+  - Distancia a recorrer (en kilómetros).
+  - Número de días de estancia en el tren.
 
-### **Cálculo de Factura:**
-- Ventana donde el usuario ingresa:
-  - Nombre del artículo.
-  - Precio del artículo.
-- **Resultados:**
-  - Monto a pagar por impuesto (19%).
-  - Total a pagar (precio + impuesto).
+- **Resultados Mostrados:**
+  - Pago sin descuento.
+  - Descuento aplicado (si corresponde).
+  - Pago final después de aplicar descuentos.
 
-### **Cálculo de Interés:**
-- Ventana donde el usuario ingresa:
-  - Nombre y RUT del depositante.
-  - Capital depositado.
-  - Porcentaje de interés.
-- **Resultados:**
-  - Monto del interés ganado.
-  - Capital final (capital + interés).
+### **Cálculo del Pago**
 
----
+1. **Costo Base:**
+   - El precio por kilómetro es **$0.75**.
+   - Se calcula multiplicando la distancia ingresada por el precio base.
 
-## 📊 **Cálculos Realizados**
+2. **Descuento Aplicado (si corresponde):**
+   - Si se recorren más de **3000 km** y la estancia supera **2 días**, se aplica un **30% de descuento**.
 
-### **Cálculo de Impuestos (Factura):**
-- Fórmula del impuesto:
-
-  $$\text{Impuesto} = \text{Precio del artículo} \times 0.19$$
-
-- Fórmula del total:
-
-  $$\text{Total} = \text{Precio del artículo} + \text{Impuesto}$$
-
-
-### **Cálculo de Interés (Depósitos):**
-- Fórmula del interés:
-  
-  $$\text{Interés Ganado} = \text{Capital} \times \left(\frac{\text{Porcentaje de Interés}}{100}\right)$$
-  
-- Fórmula del capital final:
-  
-  $$\text{Capital Final} = \text{Capital} + \text{Interés Ganado}$$
-
+3. **Cálculo Final:**
+   - Pago sin descuento:
+     \[
+     \text{Pago Base} = \text{Distancia} \times 0.75
+     \]
+   - Descuento:
+     \[
+     \text{Descuento} = \text{Pago Base} \times 0.30
+     \]
+   - Pago final:
+     \[
+     \text{Pago Final} = \text{Pago Base} - \text{Descuento}
+     \]
 
 ---
 
-## 🛡️ **Validaciones Incluidas**
+## 📖 **Estructura del Proyecto**
 
-1. **Campos Vacíos:**  
-   - Si un campo de entrada está vacío, aparece un mensaje:
-     ```
-     Ingrese valores válidos.
-     ```
+El proyecto está organizado en las siguientes clases:
 
-2. **Formato Numérico:**  
-   - Los campos de precio, capital e interés deben ser valores numéricos.  
-   - Si el usuario ingresa texto en lugar de números, el programa muestra un mensaje de error.
+1. **`TrenApp`:**  
+   Clase principal que inicia la aplicación y muestra la ventana principal.  
 
----
+2. **`TrenFrame`:**  
+   Clase para la ventana principal de ingreso de datos y cálculo de resultados.  
 
-## 📖 **Estructura del Código**
+3. **`TrenCalculo`:**  
+   Clase que encapsula la lógica de negocio para calcular el costo del viaje, descuentos y pago total.  
 
-### **Archivo Principal: `CalculadoraFinanciera.java`**
-Este archivo contiene toda la lógica de la aplicación:
-1. **Menú Principal:**
-   - Creado con `JMenuBar`, contiene las opciones de "Factura", "Interés" y "Salir".
-2. **Ventana de Factura:**
-   - Componentes:
-     - `JLabel` y `JTextField` para los datos del artículo.
-     - Botón "Calcular" con acción para mostrar los resultados.
-   - Resultados mostrados en etiquetas dinámicas.
-3. **Ventana de Interés:**
-   - Componentes:
-     - `JLabel` y `JTextField` para los datos del depósito.
-     - Botón "Calcular" para procesar los resultados.
-   - Resultados claros para interés y capital final.
+### **Diagrama de Clases**
+```plaintext
++--------------------+
+|    TrenApp         |
++--------------------+
+| - main()           |
+| - inicializar()    |
++--------------------+
+          |
+          V
++--------------------+
+|   TrenFrame        |
++--------------------+
+| - generarVentana() |
+| - manejarEventos() |
++--------------------+
+          |
+          V
++--------------------+
+|   TrenCalculo      |
++--------------------+
+| - calcularPago()   |
+| - calcularDescuento|
++--------------------+
+```
 
 ---
 
 ## 👥 **Contribuciones**
 
-Si deseas colaborar, puedes enviar mejoras o nuevas funcionalidades. Algunas ideas:  
-- Agregar más opciones al menú (por ejemplo, cálculos adicionales).  
-- Mejorar el diseño gráfico.  
-- Implementar validaciones más avanzadas.  
+¿Te gustaría colaborar en este proyecto?  
+- Reporta errores o problemas abriendo un issue en el repositorio.  
+- Propón mejoras en la interfaz o lógica del programa.  
+- Realiza un fork del repositorio y envía tus pull requests.
 
 ---
 
@@ -171,6 +159,6 @@ Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE)
 
 ---
 
-### **¡Gracias por explorar este proyecto! 🚀**
+### **¡Gracias por revisar este proyecto! 🚂✨**
 
-¿Tienes alguna pregunta o sugerencia? No dudes en abrir un issue en este repositorio. 😊
+Si tienes preguntas o comentarios, no dudes en contactarme o abrir un issue en este repositorio. 😊
