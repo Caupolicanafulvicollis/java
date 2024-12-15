@@ -1,6 +1,3 @@
-### **README.md para el Proyecto "Cálculo de Pago en Tren"**
-
----
 
 # 🚆 **Cálculo de Pago en Tren**
 

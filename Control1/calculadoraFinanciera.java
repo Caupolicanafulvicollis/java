@@ -1,9 +1,8 @@
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
-import java.awt.event.ActionListener;
 
-public class Control1AppVerticalMenu {
+public class calculadoraFinanciera {
     public static void main(String[] args) {
         // Crear la ventana principal
         JFrame mainFrame = new JFrame("Control 1");

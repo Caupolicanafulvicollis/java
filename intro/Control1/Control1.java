@@ -141,4 +141,3 @@ public class Control1 {
         interesFrame.setVisible(true);
     }
 }
-
