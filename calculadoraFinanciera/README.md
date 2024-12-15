@@ -53,8 +53,8 @@ El programa utiliza un menú interactivo para seleccionar las opciones disponibl
 
 1. **Clona este repositorio:**
    ```bash
-   git clone https://github.com/tu-usuario/calculadora-financiera.git
-   cd calculadora-financiera
+   git clone https://github.com/Caupolicanafulvicollis/java/blob/main/calculadoraFinanciera.git
+   cd calculadoraFinanciera
    ```
 
 2. **Compila el programa:**
@@ -103,23 +103,23 @@ Cuando ejecutas el programa, se muestra una ventana con un menú desplegable que
 
 ### **Cálculo de Impuestos (Factura):**
 - Fórmula del impuesto:
-  \[
-  \text{Impuesto} = \text{Precio del artículo} \times 0.19
-  \]
+
+  $$\text{Impuesto} = \text{Precio del artículo} \times 0.19$$
+
 - Fórmula del total:
-  \[
-  \text{Total} = \text{Precio del artículo} + \text{Impuesto}
-  \]
+
+  $$\text{Total} = \text{Precio del artículo} + \text{Impuesto}$$
+
 
 ### **Cálculo de Interés (Depósitos):**
 - Fórmula del interés:
-  \[
-  \text{Interés Ganado} = \text{Capital} \times \left(\frac{\text{Porcentaje de Interés}}{100}\right)
-  \]
+  
+  $$\text{Interés Ganado} = \text{Capital} \times \left(\frac{\text{Porcentaje de Interés}}{100}\right)$$
+  
 - Fórmula del capital final:
-  \[
-  \text{Capital Final} = \text{Capital} + \text{Interés Ganado}
-  \]
+  
+  $$\text{Capital Final} = \text{Capital} + \text{Interés Ganado}$$
+
 
 ---
 
