@@ -48,7 +48,7 @@ Permite calcular el costo total de un viaje en tren basándose en datos proporci
 
 1. **Clona este repositorio:**
    ```bash
-   git clone https://github.com/tu-usuario/sistema-tren.git
+   git clone https://github.com/Caupolicanafulvicollis/java/tree/main/calculadoraFinanciera.git
    cd sistema-tren
    ```
 
@@ -115,34 +115,6 @@ El proyecto está organizado en las siguientes clases:
 
 3. **`TrenCalculo`:**  
    Clase que encapsula la lógica de negocio para calcular el costo del viaje, descuentos y pago total.  
-
-### **Diagrama de Clases**
-```plaintext
-+--------------------+
-|    TrenApp         |
-+--------------------+
-| - main()           |
-| - inicializar()    |
-+--------------------+
-          |
-          V
-+--------------------+
-|   TrenFrame        |
-+--------------------+
-| - generarVentana() |
-| - manejarEventos() |
-+--------------------+
-          |
-          V
-+--------------------+
-|   TrenCalculo      |
-+--------------------+
-| - calcularPago()   |
-| - calcularDescuento|
-+--------------------+
-```
-
----
 
 ## 👥 **Contribuciones**
 
