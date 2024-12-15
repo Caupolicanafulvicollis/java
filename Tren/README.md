@@ -113,13 +113,13 @@ Este proyecto es una **aplicación gráfica en Java** que calcula el costo total
 
 3. **Cálculo Final:**  
    - **Pago sin descuento:**  
-     - <img src="https://latex.codecogs.com/gif.latex?\text{Pago Base} = \text{Distancia} \times 0.75" /> 
+     $$\text{Pago Base} = \text{Distancia} \times 0.75$$ 
 
    - **Descuento:**  
-        - <img src="https://latex.codecogs.com/gif.latex?O_t=\text{Descuento} = \text{Pago Base} \times 0.30" /> 
+        $$\text{Descuento} = \text{Pago Base} \times 0.30$$ 
 
    - **Pago Final:**  
-        - <img src="https://latex.codecogs.com/gif.latex?O_t=\text{Pago Final} = \text{Pago Base} - \text{Descuento}" /> 
+        $$\text{Pago Final} = \text{Pago Base} - \text{Descuento}$$ 
 
 ---
 
