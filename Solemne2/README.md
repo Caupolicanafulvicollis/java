@@ -130,9 +130,9 @@ El proyecto está dividido en cuatro clases principales:
 
 2. **Costo del Ticket de Lotería:**
    Según el monto del premio:
-   - $ (\text{Premio} \leq 1,000,000): Costo = 1,000.$
-   - $ (1,000,000 < \text{Premio} \leq 5,000,000 ) : Costo = 2,000.$
-   - $ ( 5,000,000 < \text{Premio} \leq 10,000,000 ): Costo = 3,000.$
+   - $ \text{Premio} \leq 1,000,000 : Costo = 1,000.$
+   - $ 1,000,000 < \text{Premio} \leq 5,000,000 : Costo = 2,000.$
+   - $  5,000,000 < \text{Premio} \leq 10,000,000 : Costo = 3,000.$
 
 ---
 
